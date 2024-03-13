@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Mania</title>
+  <!-- Adicionando Bootstrap CSS -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Estilos personalizados -->
+  <style>
+    header {
+      background-color: #343a40;
+      color: #fff;
+      padding: 20px 0;
+    }
+
+    main {
+      padding: 20px;
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .card {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="text-center">
+    <h1>Catálogo Mania</h1>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row" id="cardRow">
+        <div class="col-md-4">
+          <div class="card">
+            <img src="img\an01.jpg" class="card-img-top" alt="Geladeira Brastemp" width="300">
+            <div class="card-body">
+              <h5 class="card-title">Geladeira Brastemp</h5>
+              <p class="card-text">Descrição da geladeira Brastemp.</p>
+              <a href="https://amzn.to/3wKgw03" class="btn btn-primary">Ver detalhes</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Adicionando Bootstrap JS (opcional, apenas se precisar de funcionalidades JS do Bootstrap) -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Script para adicionar mais colunas -->
+  <script>
+    // Número de colunas que você deseja adicionar
+    var numColunas = 10;
+
+    // Referência à div onde as colunas serão adicionadas
+    var cardRow = document.getElementById('cardRow');
+
+    // Loop para adicionar as colunas
+    for (var i = 0; i < numColunas; i++) {
+      var coluna = document.createElement('div');
+      coluna.className = 'col-md-4';
+      coluna.innerHTML = '<div class="card">' +
+                            '<img src="img\an0"'+ (i + 2) +' ".jpg" class="card-img-top" alt="Placeholder">' +
+                            '<div class="card-body">' +
+                              '<h5 class="card-title">Produto ' + (i + 2) + '</h5>' +
+                              '<p class="card-text">Descrição do produto ' + (i + 2) + '.</p>' +
+                              '<a href="#" class="btn btn-primary">Ver detalhes</a>' +
+                            '</div>' +
+                          '</div>';
+      cardRow.appendChild(coluna);
+    }
+  </script>
+</body>
+</html>
