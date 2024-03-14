@@ -3,95 +3,104 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Inicial</title>
-  <!-- Adicionando Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Estilos personalizados -->
+  <title>Eletrodomésticos - CATÁLOGO MANIA</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
   <style>
-    header {
-      background-color: #343a40;
-      color: #fff;
-      padding: 20px 0;
+    /* Estilos adicionais podem ser adicionados aqui */
+    body {
+      padding-top: 50px;
     }
-
-    main {
-      padding: 20px;
-    }
-
-    section {
+    .card {
       margin-bottom: 20px;
     }
-
-    h2 {
-      color: #333;
+    .card-title {
+      font-size: 24px;
+      color: #007bff; /* Cor do título padrão */
     }
-
-    /* Estilos para a tabela */
-    table {
-      width: 100%;
+    .card-text {
+      font-size: 18px;
     }
-
-    table, th, td {
-      border: 1px solid #dee2e6;
-      border-collapse: collapse;
-      padding: 8px;
-      text-align: center;
+    .btn-primary {
+      background-color: #007bff; /* Cor do botão padrão */
+      border-color: #007bff; /* Cor do botão padrão */
     }
-
-    img {
-      max-width: 100%;
-      height: auto;
+    .btn-primary:hover {
+      background-color: #0056b3; /* Cor do botão ao passar o mouse */
+      border-color: #0056b3; /* Cor do botão ao passar o mouse */
+    }
+    .btn-comprar {
+      background-color: #28a745; /* Cor do botão de compra */
+      border-color: #28a745; /* Cor do botão de compra */
+    }
+    .btn-comprar:hover {
+      background-color: #218838; /* Cor do botão de compra ao passar o mouse */
+      border-color: #218838; /* Cor do botão de compra ao passar o mouse */
     }
   </style>
 </head>
 <body>
 
-  <header class="text-center">
-    <h1>Catalogo Mania</h1>
-  </header>
-
-  <main>
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <h2 class="text-center">Bem-vindo! A Store Black.</h2>
-            <p class="text-center">Aqui você vai encontra a melhor lista de Produtos.</p>
+  <div class="container">
+    <h1 class="text-center">Eletrodomésticos</h1>
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
+          <div class="card-body">
+            <h5 class="card-title">Máquina de Lavar Roupas</h5>
+            <p class="card-text">Lave suas roupas com eficiência e praticidade.</p>
+            <p class="card-text">Preço: R$ 1299,00</p>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
           </div>
         </div>
       </div>
-    </section>
-
-    <section>
-      <div class="container">
-        <div class="row">
-          <div class="col-md-12">
-            <table>
-              <tr>
-                <td><a href="#"><img src="imagem1.jpg" alt="Imagem 1"></a></td>
-                <td><a href="#"><img src="imagem2.jpg" alt="Imagem 2"></a></td>
-                <td><a href="#"><img src="imagem3.jpg" alt="Imagem 3"></a></td>
-                <td><a href="#"><img src="imagem4.jpg" alt="Imagem 4"></a></td>
-                <td><a href="#"><img src="imagem5.jpg" alt="Imagem 5"></a></td>
-                <td><a href="#"><img src="imagem6.jpg" alt="Imagem 6"></a></td>
-              </tr>
-              <tr>
-                <td><a href="#"><img src="imagem7.jpg" alt="Imagem 7"></a></td>
-                <td><a href="#"><img src="imagem8.jpg" alt="Imagem 8"></a></td>
-                <td><a href="#"><img src="imagem9.jpg" alt="Imagem 9"></a></td>
-                <td><a href="#"><img src="imagem10.jpg" alt="Imagem 10"></a></td>
-                <td><a href="#"><img src="imagem11.jpg" alt="Imagem 11"></a></td>
-                <td><a href="#"><img src="imagem12.jpg" alt="Imagem 12"></a></td>
-              </tr>
-              <!-- Adicione mais linhas conforme necessário -->
-            </table>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
+          <div class="card-body">
+            <h5 class="card-title">Geladeira Frost Free</h5>
+            <p class="card-text">Mantenha seus alimentos frescos por mais tempo.</p>
+            <p class="card-text">Preço: R$ 1999,00</p>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
           </div>
         </div>
       </div>
-    </section>
-  </main>
+    </div>
 
-  <!-- Adicionando Bootstrap JS (opcional, apenas se precisar de funcionalidades JS do Bootstrap) -->
+    <!-- Mais produtos adicionados -->
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
+          <div class="card-body">
+            <h5 class="card-title">Forno Elétrico</h5>
+            <p class="card-text">Asse suas receitas favoritas com praticidade e precisão.</p>
+            <p class="card-text">Preço: R$ 699,00</p>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
+          <div class="card-body">
+            <h5 class="card-title">Liquidificador</h5>
+            <p class="card-text">Prepare sucos e vitaminas com rapidez e eficiência.</p>
+            <p class="card-text">Preço: R$ 99,00</p>
+            <button class="btn btn-primary btn-comprar">Comprar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Bootstrap JS (opcional, apenas para recursos adicionais como modals, etc.) -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 </html>

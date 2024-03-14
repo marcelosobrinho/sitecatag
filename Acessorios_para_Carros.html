@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Acessórios para Carros - CATÁLOGO MANIA</title>
   <!-- Bootstrap CSS -->
-  <link id="theme" rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css">
   <style>
     /* Estilos adicionais podem ser adicionados aqui */
     body {
@@ -29,144 +29,78 @@
       background-color: #0056b3; /* Cor do botão ao passar o mouse */
       border-color: #0056b3; /* Cor do botão ao passar o mouse */
     }
+    .btn-comprar {
+      background-color: #28a745; /* Cor do botão de compra */
+      border-color: #28a745; /* Cor do botão de compra */
+    }
+    .btn-comprar:hover {
+      background-color: #218838; /* Cor do botão de compra ao passar o mouse */
+      border-color: #218838; /* Cor do botão de compra ao passar o mouse */
+    }
   </style>
 </head>
 <body>
 
   <div class="container">
     <h1 class="text-center">Acessórios para Carros</h1>
-    <button onclick="toggleTheme()" class="btn btn-primary mb-3">Alternar Tema</button>
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
+          <img src="img/car/pd01.jpg" class="card-img-top" alt="Imagem do Produto">
           <div class="card-body">
-            <h5 class="card-title"><span class="oi oi-wrench"></span> Kit de Ferramentas</h5> <!-- Ícone de chave inglesa -->
-            <p class="card-text">Conjunto completo de ferramentas para manutenção e reparos básicos em seu carro.</p>
-            <p class="card-text">Preço: R$ 149,90</p>
+            <h5 class="card-title"><span class="oi oi-wrench"></span> Tampas Fluorescentes</h5> <!-- Ícone de chave inglesa -->
+            <p class="card-text">Fixett Tampas fluorescentes universais para válvula de pneu de carro 4 peças (4 peças).</p>
+            <p class="card-text">Preço: R$29,99</p>
+            <a href="https://amzn.to/4adgf46" class="btn btn-primary btn-comprar">Comprar</a>
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
+          <img src="img/car/pd02.jpg" class="card-img-top" alt="Imagem do Produto">
           <div class="card-body">
-            <h5 class="card-title"><span class="oi oi-lock-locked"></span> Alarme Automotivo</h5> <!-- Ícone de cadeado -->
-            <p class="card-text">Proteja seu veículo com um sistema de alarme eficiente e confiável.</p>
-            <p class="card-text">Preço: R$ 299,90</p>
+            <h5 class="card-title"><span class="oi oi-lock-locked"></span> Tiras de Luz de LED para Carros</h5> <!-- Ícone de cadeado -->
+            <p class="card-text">Tiras de luz de LED para carros, farol de carro multicolorido RGB de 24 polegadas para interruptor de tira de led para lâmpada de sinalização,(2 peças 60 cm).</p>
+            <p class="card-text">Preço: R$191,97</p>
+            <a href="https://amzn.to/3wMDQKE" class="btn btn-primary btn-comprar">Comprar</a>
           </div>
         </div>
       </div>
     </div>
 
+    <!-- Mais produtos adicionados -->
+
     <div class="row">
       <div class="col-md-6">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
+          <img src="img/car/pd03.jpg" class="card-img-top" alt="Imagem do Produto">
           <div class="card-body">
             <h5 class="card-title"><span class="oi oi-headphones"></span> Sistema de Áudio</h5> <!-- Ícone de fones de ouvido -->
             <p class="card-text">Aprimore sua experiência de áudio no carro com um sistema de som de alta qualidade.</p>
             <p class="card-text">Preço: R$ 699,90</p>
+            <a href="comprar.html" class="btn btn-primary btn-comprar">Comprar</a>
           </div>
         </div>
       </div>
       <div class="col-md-6">
         <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
+          <img src="img/car/pd04.jpg" class="card-img-top" alt="Imagem do Produto">
           <div class="card-body">
             <h5 class="card-title"><span class="oi oi-camera-slr"></span> Câmera de Ré</h5> <!-- Ícone de câmera -->
             <p class="card-text">Instale uma câmera de ré para facilitar as manobras e aumentar a segurança ao estacionar.</p>
             <p class="card-text">Preço: R$ 199,90</p>
+            <a href="comprar.html" class="btn btn-primary btn-comprar">Comprar</a>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
-          <div class="card-body">
-            <h5 class="card-title"><span class="oi oi-microphone"></span> Kit de Microfones</h5> <!-- Ícone de microfone -->
-            <p class="card-text">Kit de microfones de alta qualidade para comunicação hands-free durante viagens.</p>
-            <p class="card-text">Preço: R$ 99,90</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
-          <div class="card-body">
-            <h5 class="card-title"><span class="oi oi-sun"></span> Protetor Solar para Carro</h5> <!-- Ícone de sol -->
-            <p class="card-text">Mantenha o interior do seu carro fresco e protegido dos raios solares com este protetor solar.</p>
-            <p class="card-text">Preço: R$ 49,90</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
-          <div class="card-body">
-            <h5 class="card-title"><span class="oi oi-globe"></span> GPS Veicular</h5> <!-- Ícone de globo -->
-            <p class="card-text">Nunca se perca no caminho com um GPS veicular confiável e preciso.</p>
-            <p class="card-text">Preço: R$ 199,90</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
-          <div class="card-body">
-            <h5 class="card-title"><span class="oi oi-timer"></span> Temporizador para Carro</h5> <!-- Ícone de relógio -->
-            <p class="card-text">Gerencie melhor o tempo de viagem com um temporizador digital para o seu veículo.</p>
-            <p class="card-text">Preço: R$ 29,90</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
-          <div class="card-body">
-            <h5 class="card-title"><span class="oi oi-signal"></span> Booster de Sinal</h5> <!-- Ícone de sinal -->
-            <p class="card-text">Melhore a recepção do sinal de rádio e celular em seu carro com este booster.</p>
-            <p class="card-text">Preço: R$ 79,90</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="card">
-          <img src="https://via.placeholder.com/150" class="card-img-top" alt="Imagem do Produto">
-          <div class="card-body">
-            <h5 class="card-title"><span class="oi oi-timer"></span> Temporizador para Carro</h5> <!-- Ícone de relógio -->
-            <p class="card-text">Gerencie melhor o tempo de viagem com um temporizador digital para o seu veículo.</p>
-            <p class="card-text">Preço: R$ 29,90</p>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
   <!-- Bootstrap JS (opcional, apenas para recursos adicionais como modals, etc.) -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- Bootstrap Icons -->
-  <link href="https://cdn.jsdelivr.net/npm/open-iconic@1.1.1/font/css/open-iconic-bootstrap.min.css" rel="stylesheet">
-  <script>
-    function toggleTheme() {
-      var theme = document.getElementById('theme');
-      if (theme.getAttribute('href') === 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css') {
-        theme.setAttribute('href', 'https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/darkly/bootstrap.min.css'); // Mudar para tema escuro
-      } else {
-        theme.setAttribute('href', 'https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css'); // Mudar para tema claro
-      }
-    }
-  </script>
+
 </body>
 </html>
