@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Empresa XYZ</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Estilos adicionais podem ser adicionados aqui */
+    body {
+      background-color: #F0F6FF; /* Fundo azul claro */
+      color: #4C4F46; /* Texto principal em tom escuro */
+    }
+    .navbar {
+      background-color: #4C4F46; /* Barra de navegação em verde escuro */
+    }
+    .navbar-brand,
+    .navbar-nav .nav-link {
+      color: #F0F6FF; /* Links de navegação em tom claro */
+    }
+    .jumbotron {
+      background-color: #4F4C46; /* Cabeçalho em verde escuro */
+      color: #F0F6FF; /* Texto em tom claro */
+      padding: 100px 0; /* Aumentando o espaço interno */
+      text-align: center;
+    }
+    .container-fluid section {
+      background-color: #F0F6FF; /* Fundo das seções */
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      color: #4C4F46; /* Texto das seções em tom escuro */
+    }
+    .container-fluid section p {
+      margin-bottom: 0;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      color: #4C4F46; /* Destaque letras em tom mais escuro */
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">Empresa XYZ</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#empresa">Empresa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#laboratorio">Laboratório</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#servicos">Serviços</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#noticias">Notícias</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contato">Contato</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="jumbotron">
+    <h1><span style="color: #4F4C46;">Bem-vindo à Empresa XYZ</span></h1>
+    <p>Somos uma empresa líder no setor, comprometida com a excelência e a inovação.</p>
+    <!-- Adicione aqui o código para o banner, se desejar -->
+  </div>
+
+  <div class="container-fluid">
+    <section id="home">
+      <p>Bem-vindo à Empresa XYZ. Somos uma empresa líder no setor, comprometida com a excelência e a inovação.</p>
+    </section>
+
+    <section id="empresa">
+      <p>Conheça mais sobre nossa empresa. Estabelecida em 20XX, temos uma longa história de sucesso e crescimento.</p>
+    </section>
+
+    <section id="laboratorio">
+      <p>Descubra nossas instalações de laboratório. Equipadas com tecnologia de ponta, garantimos os mais altos padrões de qualidade em nossos produtos.</p>
+    </section>
+
+    <section id="servicos">
+      <p>Saiba mais sobre os serviços que oferecemos. Desde consultoria até desenvolvimento de produtos, estamos aqui para atender às necessidades dos nossos clientes.</p>
+    </section>
+
+    <section id="noticias">
+      <p>Fique atualizado com as últimas notícias. Mantenha-se informado sobre nossos projetos, eventos e iniciativas.</p>
+    </section>
+
+    <section id="contato">
+      <p>Entre em contato conosco. Estamos disponíveis para responder às suas perguntas e discutir possíveis colaborações.</p>
+    </section>
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      // Esconder todas as seções, exceto a primeira
+      $(".container-fluid section").hide();
+      $("#home").show();
+
+      // Atualiza as seções exibidas conforme o link clicado
+      $("nav a").click(function(){
+        var sectionId = $(this).attr("href");
+        $(".container-fluid section").hide();
+        $(sectionId).show();
+      });
+    });
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
